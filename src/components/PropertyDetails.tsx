@@ -30,7 +30,9 @@ const PropertyDetails: React.FC = () => {
               </p>
               <div className="relative w-full h-64 rounded-lg overflow-hidden">
                 <img 
-                  src="/src/maps -terreno.png" 
+                  // Actualiza esta ruta para que apunte a la carpeta public
+                  // y usa el nombre de archivo renombrado si es necesario.
+                  src="/maps_terreno.png" // Nombre renombrado
                   alt="Ubicación de la propiedad"
                   className="w-full h-full object-cover"
                 />

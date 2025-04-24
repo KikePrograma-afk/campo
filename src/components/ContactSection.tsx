@@ -17,7 +17,7 @@ const ContactSection: React.FC = () => {
 
   useEffect(() => {
     // Inicializa EmailJS con tu Public Key
-    // Asegúrate de que 'AHpTc2fRqOkQbIdjF' es tu Public Key correcta
+    // Asegúrate de que 'AHpTc2fRqOkQbIdjF' es tu  Key Publiccorrecta
     emailjs.init("AHpTc2fRqOkQbIdjF");
   }, []);
 

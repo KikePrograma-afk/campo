@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+// Actualiza estas rutas para que apunten a la carpeta public
+// y usa los nombres de archivo renombrados si es necesario.
 const images = [
-  "/src/naturaleza.jpg",
-  "/src/casa.jpg",
-  "/src/terreno trabajado.jpg",
-  "/src/pileta.jpg",
-  "/src/entrada.jpg",
-  "/src/finca.jpg",
-  "/src/patio pileta.jpg"
+  "/naturaleza.jpg",
+  "/casa.jpg",
+  "/terreno_trabajado.jpg", // Nombre renombrado
+  "/pileta.jpg",
+  "/entrada.jpg",
+  "/finca.jpg",
+  "/patio_pileta.jpg" // Nombre renombrado
 ];
 
 const HeroSection: React.FC = () => {
@@ -38,8 +40,9 @@ const HeroSection: React.FC = () => {
             index === currentImage ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
+            // No necesitas cambiar esta parte, ya usa las rutas del array 'images'
             style={{ backgroundImage: `url(${src})` }}
           />
           <div className="absolute inset-0 bg-black bg-opacity-40" />

@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 
+// Actualiza estas rutas para que apunten a la carpeta public
+// y usa los nombres de archivo renombrados si es necesario.
 const images = [
-  "/src/naturaleza.jpg",
-  "/src/casa.jpg",
-  "/src/terreno trabajado.jpg",
-  "/src/pileta.jpg",
-  "/src/entrada.jpg",
-  "/src/finca.jpg",
-  "/src/patio pileta.jpg"
+  "/naturaleza.jpg",
+  "/casa.jpg",
+  "/terreno_trabajado.jpg", // Nombre renombrado
+  "/pileta.jpg",
+  "/entrada.jpg",
+  "/finca.jpg",
+  "/patio_pileta.jpg" // Nombre renombrado
 ];
 
 const Gallery: React.FC = () => {
@@ -39,6 +41,7 @@ const Gallery: React.FC = () => {
               onClick={() => openModal(image)}
             >
               <img 
+                // No necesitas cambiar esta parte, ya usa las rutas del array 'images'
                 src={image} 
                 alt={`Propiedad en Catamarca ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
